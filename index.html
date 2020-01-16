@@ -6,8 +6,15 @@
 </head>
 <body>
 
-  <p onClick="makeGrey()">Hello</p>
+  <p onClick="makePink()">Click Me</p>
   <script>
+      const cats = [{ name: 'Brer', age: 5 }, { name: 'Darla', age: 5 }];
+
+function makePink() {
+  const p = document.querySelector('p');
+  p.style.color = '#FF69B4';
+  p.style.fontSize = '50px';
+}
   </script>
   </body>
   </html>
