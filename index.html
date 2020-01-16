@@ -27,6 +27,13 @@ console.assert(p.classList.contains('oops'), 'whoops');
 console.clear();
 console.log(p);
 console.dir(p);
+cats.forEach(cat => {
+      console.groupCollapsed(`${cat.name}`);
+      console.log(`This is ${cat.name}`);
+      console.log(`${cat.name} is ${cat.age} years old`);
+      console.log(`${cat.name} is ${cat.age * 7.2} cat years old`);
+      console.groupEnd(`${cat.name}`);
+    });
   </script>
   </body>
   </html>
